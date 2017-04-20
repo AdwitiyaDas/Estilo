@@ -1,0 +1,146 @@
+/* CSS Document */
+/*Global*/
+html{}
+body{background-color:#FFF;}
+
+/*classes*/
+
+ .locate { width:1340px; height:800px; background-color:#D9D9D9; font-family:"Courier New", Courier, monospace; font-size:18px;}
+ .locate img {position:absolute; left:250px;top:500px;padding:10px; border:1px #999 solid;}
+ .image-frame {padding:10px; border:1px #999 solid; margin:10px;}
+ .slider { width:1340px;height:750px;overflow:hidden; margin:auto;padding:10px;border:thin #787878 solid; }
+ .slider img{ width:900px;height:450px;display:none; }
+ .left {float:left}
+ .right{float:right}
+ .button { background-color:#6CC ;  font-size:16px; height:32px;}
+ .text { background-color:#E2E2E2; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif, cursive; font-size:16px; color:#8B8B8B }
+ .footerlist {display:inline;}
+ .shiftsearch { position:absolute; left:45px; top:110px;}
+ .shiftlogin {position:absolute; left:1220px; top:90px;}
+ .shiftshoppingbag {position:absolute;left:1220px;top:100px;}
+ .bags {
+	float:left;
+	margin-left:42px;
+	margin-right:42px;
+	font-family: "Agency FB", Algerian, Andalus, "Angsana New", AngsanaUPC;
+	text-align: center;
+	font-size: 18px;
+	color: #000;
+}
+ .bags img{}
+ 
+ 
+/*links format*/
+
+a		{ }
+a:link		{ color:#666;  text-decoration:none;}
+a:visited	{ color:#63C;  text-decoration:none;}
+a:active	{ color:#F00;  text-decoration:none;}
+a:focus		{ color:#CF0;  text-decoration:none;}
+a:hover		{ color:#FF9F00;  text-decoration:none;}
+
+/*containers*/
+
+ #outer 			{ width:990px; margin:0 auto; background-color:#FFF;}
+ 
+ #wrapper 			{
+	width:1340px;
+	background-color:#FFF;
+	
+}
+ 
+ .wrapperty{ background-image:url(../Images/tybg.jpg); width:1340px; }
+ 
+
+ #icons 			{clear:both;width:1340px; border-bottom:1px solid #929292;float:right; height:60px;}
+ #icons ul li 		{ display:inline;padding:2px;float:right;}
+ #icons ul 			{ }
+ 
+ 
+ #above-topnav			  { width:1340px;height:150px; } 			
+ #above-topnav ul		  {margin:0 auto;}
+ #above-topnav ul li	  {display:inline;font-family: "Courier New", Courier, monospace;	font-weight: bold;	font-size: 16px;}
+ #above-topnav  a 	      {text-decoration:none; font-family:Broadway;	font-weight: normal;	font-size: 30px; text-align:center; height:30px; width:100px; display:block; color:#333;}
+ #above-topnav  a:hover  { text-decoration:none; font-family:Broadway;	font-weight: normal;	font-size: 30px; text-align:center; height:30px; width:100px; display:block; color:#F60;}
+
+
+
+ 
+ #login				{clear:both;font-family:"Courier New", Courier, monospace;color:#7A7A7A;font-size:20px;float:right;margin:0 20px}
+
+ 
+ #menuholder a:link				{ color:#66CDAA  ; font-weight:bold; }
+ #menuholder a:visited			{ color:#66CDAA  ; }
+ #menuholder a:active			{ color:#F90 ;}
+ #menuholder a:focus			{ color:#66CDAA  ; }
+ #menuholder a:hover			{ color:#F90; }
+ 
+ #menuholder  {
+	
+	 width:1340px;
+	 height:40px;
+	 margin-top:21px;
+	 background-color:#313131;
+	
+ }
+nav ul 					{ margin:0; padding:0;}
+nav ul li				{ list-style:none;float:left;display:block;width:265.5px; height:40px; text-align:center;line-height:38px;
+						 font-size:22px;}
+nav ul li a				{text-decoration:none; font-family:'Josefin Sans', sans-serif;}
+nav ul li:Hover 		{ background-color:#0D0D0D;}
+nav a 					{display:block;}
+nav ul ul 				{display:none;position:relative;visibility:visible;}
+nav ul li:Hover ul 		{display:block;visibility:visible; z-index:100; opacity:0.8;}
+nav ul ul li			{display:block;width:265.5px; height:35px;line-height:38px; background-color:#343434; font-size:18px;}
+
+ #around-slider		{ width:1000px;height:500px; margin:30px auto;}
+ #around-slider a	{ margin-top:10px; padding:5px 10px; background-color:#F0F0F0; font:Tahoma, Geneva, sans-serif;color:#242424;}
+
+ 
+ 
+ 
+ #clothes {width:1360px;}
+ #clothes ul {display:inline; }
+ #clothes ul li {list-style:none;float:left;display:block;text-align:center; font-family:'Josefin Sans', sans-serif; line-height:20px; font-size:15px;}
+ .clothbox {margin:40px; text-align:center;}
+ .clothbox img {width:250px; height:350px;}
+ 
+ 
+ #content			{ margin-top:20px; width:1340px; height:715px; background-color:#FFFFFF;border-top:1px solid #929292;}
+ #content ul		{ padding-bottom:20px; padding-left:20px; padding-right:20px; padding-top:20px; }
+ #content ul li		{ display:inline; margin:20px;padding:75px; }
+ #content ul li img { }
+  
+
+ #exclusiveoffers { width:1340px;height:70px; background-color:#333 ; font-family:Verdana, Geneva, sans-serif; font-size:24px; color:#FFF;	}
+ #exclusiveoffers ul{ }
+ #exclusiveoffers ul li{ display:inline;position:relative; left:320px; top:20px; }
+ 
+ #footer 			{width:1340px; height:400px; background-color:#D3D3D3;}
+ #footer ul li		{display:inline;}
+
+
+ #aboutus   { width:370px; height:300px; margin: 10px auto; text-align:center;}
+ #help		{ width:200px; height:300px;  margin: 10px auto;  position:absolute; top:1650px; left:170px; text-align:center;}
+ #payby		{ width:200px; height:300px;  margin: 10px auto;  position:absolute; top:1680px; left:1000px;  text-align:center;}
+ #copyright  { margin:20px auto; position:absolute; left:400px; }
+ 
+ 
+ #bags {width:1340px; height:2180px;  }
+ #bags ul li{ display:inline; margin : auto; width:300px; height:400px; }
+  
+  
+ #bag-footer { width:1340px; height:200px; border-top:#666 1px solid;}
+ #bag-footer img { position:relative; top:20px; left:198px; }
+  
+ #headings {text-align:center; font-family:"Freestyle Script" ; color:#6CF; font-size:36px;}
+ 
+ #catalogue { width:1340px; height:3800px;}
+ #catalogue ul li { display:inline; margin : auto; }
+ 
+ 
+ #thankyou table{ alignment-adjust:central;margin:30px 28px;}
+ #thankyou label{ alignment-adjust:central; font-size:40px; font-family:"French Script MT"; float:right; alignment-adjust:hanging;}
+ #thankyou input{height:60px; width:200px; background-color:#F60; color:#FFF; border-radius:8px;}
+ #popup { background-color:#399;}
+#wowslider-container0{margin-top:20px;}

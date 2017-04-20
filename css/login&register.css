@@ -1,0 +1,13 @@
+/* CSS Document */
+
+.bodyimage { background-image:url(../Images/loginandregisterbg.jpg); }
+#tables { background-color:#FFF; height:280px;text-align:center; }
+#tables label { font-family: 'Dosis', sans-serif; }
+#formdiv { margin:50px 460px 0px 460px;}
+
+ #above-topnav1 ul		  {margin:0 auto;}
+ #above-topnav1 ul li	  {display:inline;font-family: "Courier New", Courier, monospace;	font-weight: bold;	font-size: 16px;}
+ #above-topnav1  a 	      {text-decoration:none; font-family:Broadway;	font-weight: normal;	font-size: 30px; text-align:center; height:30px; width:100px; display:block; color:#333;}
+ #above-topnav1  a:hover  { text-decoration:none; font-family:Broadway;	font-weight: normal;	font-size: 30px; text-align:center; height:30px; width:100px; display:block; color:#F60;}
+
+ .button1 {height:30px; width:80px; border-radius:10px; background-color:#F30; font-family:Georgia, "Times New Roman", Times, serif; color:#FFF;}

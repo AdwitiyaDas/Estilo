@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/login&register.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="css/styles.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cinzel|Crimson+Text|Harmattan|Josefin+Sans" rel="stylesheet">
+<title>User Login</title>
+<script type="text/javascript">
+function validate(form_id,email)
+{
+	var reg=/^([A-Za-z0-9_\-\.]){1,}\@([A-Za-z0-9_\-\.]){1,}\.([A-Za-z]{2,4})$/;
+	
+    var address=document.forms[form_id].elements[email].value;
+	
+	if(reg.test(address)==false)
+	{
+		alert('Invalid Email Address.Please enter a valid one');
+		document.forms[form_id].elements[email].focus();
+		return false;
+	}
+	
+}
+</script>
+</head>
+
+<body class="bodyimage">
+<div id="wrapper">
+	
+    <div id="icons">
+   		<ul>
+			
+       		<li><a href="https://www.facebook.com/"> <img src="Images/socialmediaicons/facebook.jpg" width="32" height="32" id="Image1"/></a></li>
+    		<li><a href="https://twitter.com/login"><img src="Images/socialmediaicons/twitter.jpg" width="32" height="32"/></a></li>
+    		<li><a href="https://www.youtube.com/?gl=IN"><img src="Images/socialmediaicons/youtube.jpg" width="32" height="32" /></a></li>
+    		<li><a href="https://in.pinterest.com/login/"><img src="Images/socialmediaicons/pinterest.jpg" width="32" height="32"/></a></li>
+		</ul>
+    </div>
+    
+    <div id="above-topnav">
+        <ul>
+        	<li class="shiftsearch"><input type="text" value="Search" class="text" /><input type="button" value="Go" class="button"/></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="Images/logo.jpg" hspace="115" width="100" height="100"/></li>
+            <li class="shiftlogin"><a href="userlogin.html">USER LOGIN</a></li>
+           
+        </ul>
+    </div>
+    
+  <div id="menuholder">
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="index.html">Men</a>
+						<ul>
+							<li><a href="MShirts.html">Shirts</a></li>
+							<li><a href="MTShirts.html">T-Shirts</a></li>
+							<li><a href="MJeans&Trousers.html">Jeans and Trousers</a></li>
+							
+						</ul>
+				</li>
+				<li><a href="index.html">Women</a>
+						<ul>
+							<li><a href="WTops&Tees&Shirts.html">Tops,Tees and Shirts</a></li>
+							<li><a href="WDresses&Jumpsuits.html">Dresses and Jumpsuits</a></li>
+							<li><a href="WJeans&Trousers.html">Jeans and Trousers</a></li>
+							<li><a href="WSkirts&Shorts.html">Skirts and Shorts</a></li>
+						</ul>
+				</li>
+				<li><a href="sale.html">Sale</a></li>
+				<li><a href="LocateUs.html">Locate Us</a></li>
+			</ul>
+		</nav>
+	</div>
+ </div>
+
+<div id="formdiv" >    
+<form name="login" onsubmit="javascript:return validate('login','email');" action="index.html" method="get">
+<table id="tables" width="471" height="350">
+<tr>
+	<td width="201" height="77"><h2>SIGN UP</h2></td>
+</tr>
+<tr>
+	<td><label for="Name">NAME(FULL) :</label></td>
+    <td width="258"><div align="left">
+      <input name="name" type="text" id="name" size="30" maxlength="70" required="required"/>
+    </div></td>
+</tr>
+<tr>
+	<td><label for="Email Id">EMAIL ID  :</label></td>
+	<td><div align="left">
+	  <input name="email" type="text" id="email" size="30" maxlength="30" required="required"/>
+	  </div></td>
+</tr>
+<tr>
+	<td><label for="Password">PASSWORD  :</label></td>
+    <td><div align="left">
+      <input name="password" type="password" id="password" size="30" maxlength="20" required="required"/>
+    </div></td>
+</tr>
+<tr>
+	<td><label>Already registered?<a href="userlogin.html">SIGN IN HERE</a></label></td>
+    <td><input type="submit" value="Submit" class="button1"/></td>
+</tr>
+</table>
+</form></div>
+</body>
+</html>

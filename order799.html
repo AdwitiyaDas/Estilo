@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/styles.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="https://fonts.googleapis.com/css?family=Cinzel|Crimson+Text|Harmattan|Josefin+Sans" rel="stylesheet">
+<link href="css/confirmorder.css" rel="stylesheet" type="text/css" media="screen"/>
+<title>Confirm Order</title>
+<script src="SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
+<script type="text/javascript">
+function validate(payment,phone,cardnumber,cvv)
+{
+	var contact=document.forms[payment].elements[phone].value;
+    var code=document.forms[payment].elements[cvv].value;
+	var card=document.forms[payment].elements[cardnumber].value;
+	
+	if(contact<7000000000 || contact>9999999999 || isNaN(contact)==true)
+	{
+		alert('Invalid Phone Number.Please enter a valid one');
+		document.forms[payment].elements[phone].focus();
+		return false;
+	}
+	if(card<00000000000000000 || card>9999999999999999 || isNaN(card)==true)
+	{
+		alert('Invalid Card Number.Please enter a valid one');
+		document.forms[payment].elements[phone].focus();
+		return false;
+	}
+	
+
+	if(code<100 || code>999 || isNaN(code)==true)
+	{
+		alert('Invalid CVV.Please enter a valid one');
+		document.forms[payment].elements[phone].focus();
+		return false;
+	}
+	
+}
+
+</script>
+
+<script>
+
+	function validateCOD(payment,phone)
+	{
+		var contact=document.forms[payment].elements[phone].value;
+	
+	if(contact<7000000000 || contact>9999999999 || isNaN(contact)==true)
+	{
+		alert('Invalid Phone Number.Please enter a valid one');
+		document.forms[payment].elements[phone].focus();
+		return false;
+	}
+		
+}
+		
+</script>
+<link href="SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="bodycolor">
+<div id="wrapper">
+
+    <div id="icons">
+   		<ul>
+			
+       		<li><a href="https://www.facebook.com/"> <img src="Images/socialmediaicons/facebook.jpg" width="32" height="32" id="Image1"/></a></li>
+    		<li><a href="https://twitter.com/login"><img src="Images/socialmediaicons/twitter.jpg" width="32" height="32"/></a></li>
+    		<li><a href="https://www.youtube.com/?gl=IN"><img src="Images/socialmediaicons/youtube.jpg" width="32" height="32" /></a></li>
+    		<li><a href="https://in.pinterest.com/login/"><img src="Images/socialmediaicons/pinterest.jpg" width="32" height="32"/></a></li>
+		</ul>
+    </div>
+    
+    <div id="above-topnav">
+        <ul>
+        	<li class="shiftsearch"><input type="text" value="Search" class="text" /><input type="button" value="Go" class="button"/></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="Images/logo.jpg" hspace="115" width="100" height="100"/></li>
+            <li class="shiftlogin"><a href="userlogin.html">USER LOGIN</a></li>
+           
+        </ul>
+    </div>
+    
+   <div id="menuholder">
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="index.html">Men</a>
+						<ul>
+							<li><a href="MShirts.html">Shirts</a></li>
+							<li><a href="MTShirts.html">T-Shirts</a></li>
+							<li><a href="MJeans&Trousers.html">Jeans and Trousers</a></li>
+							
+						</ul>
+				</li>
+				<li><a href="index.html">Women</a>
+						<ul>
+							<li><a href="WTops&Tees&Shirts.html">Tops,Tees and Shirts</a></li>
+							<li><a href="WDresses&Jumpsuits.html">Dresses and Jumpsuits</a></li>
+							<li><a href="WJeans&Trousers.html">Jeans and Trousers</a></li>
+							<li><a href="WSkirts&Shorts.html">Skirts and Shorts</a></li>
+						</ul>
+				</li>
+				<li><a href="sale.html">Sale</a></li>
+				<li><a href="LocateUs.html">Locate Us</a></li>
+			</ul>
+		</nav>
+	</div>
+	
+ </div>
+<div id="TabbedPanels1" class="TabbedPanels">
+  <ul class="TabbedPanelsTabGroup">
+    <li class="TabbedPanelsTab" tabindex="0">Credit Card</li>
+    <li class="TabbedPanelsTab" tabindex="0">Debit Card</li>
+	<li class="TabbedPanelsTab" tabindex="0">Cash On Delivery</li>
+  </ul>
+  <div class="TabbedPanelsContentGroup">
+    <div class="TabbedPanelsContent"><div id="bill"><h3>Net Payable Amount: Rs.799(including all charges)</h3></div><form name="payment1" method="get" onsubmit="javascript:return validate('payment1','phone1','cardnumber1','cvv1');" action="ThankYou.html"><table width="552" height="198" align="center" id="paymenttable">
+    <tr><td width="552" height="50"><div align="right">Name:</div></td><td colspan="3"><div align="left">
+      <input type="text" id="name1" name="name1" size="40" required="required"/>
+    </div></td></tr>
+    <tr><td height="50"><div align="right">Address:</div></td><td colspan="3"><div align="left">
+      <textarea cols="30" required="required" id="address1"></textarea>
+    </div></td></tr>
+    <tr><td height="50"><div align="right">Phone Number: </div></td><td colspan="3"><div align="left">
+      <input name="phone1" type="text" required="required" id="phone1" />
+    </div></td></tr>
+    <tr><td height="50"><div align="right">Card Number:</div></td><td colspan="3"><div align="left">
+      <input type="text" id="cardnumber1" name="cardnumber1" size="40" required="required"/>
+    </div></td></tr>
+    <tr><td height="50"><div align="right">Month Of Expiry:</div></td><td width="101"><div align="left">
+      <select>
+        <option>January</option>
+        <option>February</option>
+        <option>March</option>
+        <option>April</option>
+        <option>May</option>
+        <option>June</option>
+        <option>July</option>
+        <option>August</option>
+        <option>September</option>
+        <option>October</option>
+        <option>November</option>
+        <option>December</option>
+      </select>
+    </div></td>
+      <td width="137"><div align="right">Year Of Expiry:</div></td>
+      <td width="141"><div align="left">
+        <select>
+          <option>2016</option>
+          <option>2017</option>
+          <option>2018</option>
+          <option>2019</option>
+          <option>2020</option>
+          <option>2021</option>
+          <option>2022</option>
+          <option>2023</option>
+          <option>2024</option>
+          <option>2025</option>
+          <option>2026</option>
+          <option>2027</option>
+        </select>
+      </div></td>
+      
+    </tr>
+    <tr><td height="50"><div align="right">CVV code: </div></td><td colspan="3"><div align="left">
+      <input type="text" id="cvv1" name="cvv1" required="required" size="30"/>
+    </div></td></tr>
+    </table>
+    <input type="submit" id="submit" name="submit" class="submit" />
+    </form>
+    </div>
+    <div class="TabbedPanelsContent"><div id="bill"><h3>Net Payable Amount: Rs.799(including all charges)</h3></div><form name="payment" method="get" onsubmit="javascript:return validate('payment','phone','cardnumber','cvv');" action="ThankYou.html"><table width="552" height="198" align="center" id="paymenttable">
+    <tr><td width="552" height="50"><div align="right">Name:</div></td><td colspan="3"><div align="left">
+      <input type="text" id="name" name="name" size="40" required="required"/>
+    </div></td></tr>
+    <tr><td height="50"><div align="right">Address:</div></td><td colspan="3"><div align="left">
+      <textarea cols="30" required="required" id="address"></textarea>
+    </div></td></tr>
+    <tr><td height="50"><div align="right">Phone Number: </div></td><td colspan="3"><div align="left">
+      <input name="phone" type="text" required="required" id="phone" />
+    </div></td></tr>
+    <tr><td height="50"><div align="right">Card Number:</div></td><td colspan="3"><div align="left">
+      <input type="text" id="cardnumber" name="cardnumber" size="40" required="required"/>
+    </div></td></tr>
+    <tr><td height="50"><div align="right">Month Of Expiry:</div></td><td width="101"><div align="left">
+      <select>
+        <option>January</option>
+        <option>February</option>
+        <option>March</option>
+        <option>April</option>
+        <option>May</option>
+        <option>June</option>
+        <option>July</option>
+        <option>August</option>
+        <option>September</option>
+        <option>October</option>
+        <option>November</option>
+        <option>December</option>
+      </select>
+    </div></td>
+      <td width="137"><div align="right">Year Of Expiry:</div></td>
+      <td width="141"><div align="left">
+        <select>
+          <option>2016</option>
+          <option>2017</option>
+          <option>2018</option>
+          <option>2019</option>
+          <option>2020</option>
+          <option>2021</option>
+          <option>2022</option>
+          <option>2023</option>
+          <option>2024</option>
+          <option>2025</option>
+          <option>2026</option>
+          <option>2027</option>
+        </select>
+      </div></td>
+      
+    </tr>
+    <tr><td height="50"><div align="right">CVV code: </div></td><td colspan="3"><div align="left">
+      <input type="text" id="cvv" name="cvv" required="required" size="30"/>
+    </div></td></tr>
+    </table>
+    <input type="submit" id="submit" name="submit" class="submit" />
+    </form></div>
+	
+    
+    <div class="TabbedPanelsContent"><div id="bill"><h3>Net Payable Amount: Rs.799(including all charges)</h3></div><form name="payment2" method="get" onsubmit="javascript:return validateCOD('payment2','phone2');" action="ThankYou.html"><table width="552" height="198" align="center" id="paymenttable">
+    <tr><td width="552" height="50"><div align="right">Name:</div></td><td colspan="3"><div align="left">
+      <input type="text" id="name2" name="name2" size="40" required="required"/>
+    </div></td></tr>
+    <tr><td height="50"><div align="right">Address:</div></td><td colspan="3"><div align="left">
+      <textarea cols="30" required="required" id="address2"></textarea>
+    </div></td></tr>
+    <tr><td height="50"><div align="right">Phone Number: </div></td><td colspan="3"><div align="left">
+      <input name="phone2" type="text" required="required" id="phone2" />
+    </div></td></tr>
+    </table>
+    <input type="submit" id="submit" name="submit" class="submit" />
+    </form></div>
+  </div>
+</div>
+</div>
+
+<script type="text/javascript">
+var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
+</script>
+</body>
+</html>

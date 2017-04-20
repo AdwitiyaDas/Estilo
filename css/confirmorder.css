@@ -1,0 +1,16 @@
+/* CSS Document */
+
+#bodycolor { background-image:url(../Images/happy.jpg);}
+#ordertable { border:5px #09F solid;
+	position:absolute;
+	left:370px;
+	top:265px;
+	background-color:#FF7373;
+	text-align:center;
+	font-family:Broadway;
+	color:#FFF;
+	width: 638px;
+}
+.submit{ background-color:#F00; text-align:center; font-family:Tahoma, Geneva, sans-serif; color:#FFF; margin:10px 250px; height:30px; width:80px; border-radius:5px;}
+#paymenttable {text-align:center; font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif; color:#003;}
+#bill{text-align:center; font-family:Verdana, Geneva, sans-serif; color:#F30;}
